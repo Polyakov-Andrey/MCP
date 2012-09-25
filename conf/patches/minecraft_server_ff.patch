@@ -68,3 +68,14 @@ diff -r -U 3 minecraft_server\net\minecraft\src\ThreadedFileIOBase.java minecraf
     }
  
     private void func_75736_b() {
+diff -r -U 3 minecraft_server\net\minecraft\src\ItemMap.java minecraft_server_patched\net\minecraft\src\ItemMap.java
+--- minecraft_server\net\minecraft\src\ItemMap.java	Wed Aug 01 18:15:37 2012
++++ minecraft_server_patched\net\minecraft\src\ItemMap.java	Wed Aug 01 18:27:23 2012
+@@ -24,7 +24,6 @@
+    }
+ 
+    public static MapData func_77874_a(short p_77874_0_, World p_77874_1_) {
+-      "map_" + p_77874_0_;
+       MapData var3 = (MapData)p_77874_1_.func_72943_a(MapData.class, "map_" + p_77874_0_);
+       if(var3 == null) {
+          int var4 = p_77874_1_.func_72841_b("map");
